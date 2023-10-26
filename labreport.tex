@@ -1,0 +1,52 @@
+%! Author = leonardocandio
+%! Date = 25/10/23
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{3er Laboratorio de Machine Learning}
+\author{Universidad de Ingenieria y Tecnologia (UTEC) -- Lima, Peru}
+\date{October 2023 -- Seccion Profesor Arturo Deza}
+
+\begin{document}
+
+    \maketitle
+    \small
+
+    \section*{Tema de Laboratorio : Embeddings, Clustering \& Visualization}
+
+    \textbf{Alumnos/as : NOMBRES (Grupo de 3 maximo)}
+
+    \textbf{Note: You will be qualified on the quality of your plots for this lab. Please make high quality 2D plots to get full points per question.}
+
+    \begin{enumerate}
+%20
+        \item [2 points] Find a new publicly available \textit{image dataset} between 3 to 10 classes, with no more than 1'000'000 data points, and no less than 50'000 data points. You can not use MNIST, but can use derivatives (e.g. Fashion-MNIST). If convenient, you are welcome to resize the images to 32x32x3 and let that be your raw dataset if the original image size is too big. You must declare the dimensionality of your raw data. For example: If images are 32x32x3, dimensionality is 3072. Please plot 10 examples of images used in your dataset -- at least 1 per class. \textit{(Buscar un nuevo dataset publico entre 3 a 10 clases, que tenga no mas de 1'000'000 de puntos de data y no menos de 50'000. No puedes usar MNIST, pero si otras bases de datos asocidadas a MNIST : Ejemplo: Fashion MNIST. Si fuera conveniente puedes re-scalar tu dataset a 32x32x3 si las imagenes originales son muy grandes, y dejar que ese sea tu nueva data en bruto. Deberas declarar la dimensionalidad de tu data en bruto. Por ejemplo: si las imagenes son de 32x32x3, la dimensionalidad es de 3072. Plotear 10 ejemplos de imagenes usadas en tu dataset -- por lo menos 1 por clase)}.
+
+        \item [2 points] Project your image dataset (raw data) into 2 dimensions using PCA, and visualize/plot the dataset with color codes depending on the classes. In addition, plot the 2 eigenvectors. \textit{(Proyectar tu dataset (data en bruto) a dos dimensiones usando PCA, y visualizar/plotear el dataset con un codigo de colores dependiendo de las clases. Plotear los dos eigenvectors tambien.)}
+
+        \item [2 points] Repeat the step above by first using an embedding of your choice and then applying PCA to project the dataset into 2 dimensions. Visualize/plot the dataset with color codes depending on the classes. You must declare the dimension of the embedding.\textit{(Repetir el paso anterior usando primero un embedding de tu eleccion y luego aplicar PCA al dataset hacia dos dimensiones. Visualizar/plotear el dataset con un codigo de colores dependiendo de las clases. Deberas declarar la dimension del embedding.)}
+
+        \item [2 points] Project your image dataset (raw data) into 2 dimensions using t-SNE, and visualize/plot the dataset with color codes depending on the classes. \textit{(Proyectar tu dataset (data en bruto) a dos dimensiones usando t-SNE, y visualizar/plotear el dataset con un codigo de colores dependiendo de las clases.)}
+
+        \item [2 points] Repeat the step above by first using an embedding of your choice and then applying t-SNE to project the dataset into 2 dimensions. Visualize/plot the dataset with color codes depending on the classes. \textit{(Repetir el paso anterior usando primero un embedding de tu eleccion y luego aplicar t-SNE al dataset hacia dos dimensiones. Visualizar/plotear el dataset con un codigo de colores dependiendo de las clases. Deberas declarar la dimension del embedding.)}
+
+        \item [4 points] Apply K-Means (select K to be any value between 3 to 10 depending on the number of classes in your dataset), and cluster the 2-D projected data assuming you do not know any labels. Plot the color coded clusters for the cases above: PCA, Embedding-PCA, t-SNE and Embedding-t-SNE. You should have 4 plots. Which clustering plot looks better to you? Why? \textit{(Aplicar K-Means (elegir K como cualquier valor entre 3 y 10 dependiendo del numero de clases en tu dataset), y clusterizar la data que esta proyectada en 2-D asumiendo que no tienes acceso a los labels. Plotear los clusters en codigos de color para los siguientes casos: PCA, Embedding-PCA, t-SNE y Embedding-t-SNE. Deberias tener 4 plots. Que clusters se ven mejor para ti? Por que?)}
+
+        \item [4 points] Apply Mean-Shift with a Gaussian kernel and cluster 2-D projected data assuming you do not know any labels. Plot the color coded clusters for the cases above: PCA, Embedding-PCA, t-SNE and Embedding-t-SNE. You should have 4 plots, which clustering plot looks better to you? Why? \textit{(Aplicar Mean-Shift con un Gaussian Kernel y clusterizar la data que esta proyectada en 2-D asumiendo que no tienes acceso a los labels. Plotear los clusters en codigos de color para los siguientes casos: PCA, Embedding-PCA, t-SNE y Embedding-t-SNE. Deberias tener 4 plots. Que clusters se ven mejor para ti? Por que?)}
+
+        \item[2 points] Did K-Means or Mean-Shift cluster the data better? Why? How much do you think this depended on PCA vs t-SNE or using an embedding or the raw data? \textit{(Que algoritmo clusterizo la data mejor: K-Means o Mean-Shift? Por que? Cuanto crees que esto depende de PCA vs t-SNE o del tipo de embedding o de la data en bruto?)}
+
+
+        \item [Obligatory] Please list in your report: \textit{(Favor agregar en tu informe)}:
+        \begin{enumerate}
+            \item The contributions of each author. \textit{(La contribucion de cada autor)}
+            \item The list of all the python packages used. \textit{(La lista de todos los paquetes de python y/o otro lenguaje utilizado)}
+            \item The list of all toolboxes used (and links to datasets and dataset license) \textit{(La lista de todos los toolboxes utilizados (y links de datasets y licensias de datasets))}
+            \item The list of any AI tools (\textit{e.g.} ChatGPT, Perplexity, You) used in your homework and how. \textit{(La lista de todos los asistentes de AI utilizados (ejemplo: ChatGPT, Perplexity, You))}
+            \item The list of all academic references used in your homework. \textit{(La lista de todas las referencias academicas en tu tarea )}
+            \item Attach a copy of all your code (this may extend 2 pages). \textit{(Agregar una copia de todo to codigo -- esto puede extender 2 paginas)}
+        \end{enumerate}
+    \end{enumerate}
+
+
+\end{document}
