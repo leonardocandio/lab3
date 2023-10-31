@@ -14,7 +14,7 @@ Brotli==1.0.9
 certifi==2023.7.22
 cffi==1.15.1
 charset-normalizer==2.0.4
-clip==1.0
+clip @ https://github.com/openai/CLIP.git
 comm==0.1.2
 contourpy==1.0.5
 cryptography==41.0.3
